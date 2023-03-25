@@ -600,7 +600,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void MI_CrearPartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MI_CrearPartActionPerformed
         if (((Torneo) actualizar.getUserObject()).getEquipos().size() < 2) {
-            JOptionPane.showMessageDialog(jT_Tree, "Debe tener al menos 2 equipos para esta opcion");
+            JOptionPane.showMessageDialog(jT_Tree, "2 equipos minimo");
         } else {
 
             DefaultComboBoxModel modelo = (DefaultComboBoxModel) jCB_Equipo1.getModel();
@@ -684,7 +684,7 @@ public class Menu extends javax.swing.JFrame {
                 File f = jfc.getSelectedFile();
                 if (f.exists()) {
                     String[] path = f.getPath().split("\\.");
-                    if (path[path.length - 1].equals("dar")) {
+                    if (path[path.length - 1].equals("dmaf")) {
                         FileInputStream in = new FileInputStream(f);
                         ObjectInputStream input = new ObjectInputStream(in);
                         try {
